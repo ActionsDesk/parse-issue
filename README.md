@@ -13,7 +13,7 @@ This parser will replace whitespace and special characters with `_`, then squash
 #### Example Workflow
 ```Yaml
 - id: parser
-  uses: jasonmacgowan/parse-issue@v1
+  uses: actionsdesk/parse-issue@v1
 - uses: actions/some-action@v1
   with:
     foo: ${{steps.parser.outputs.foo}}
@@ -57,7 +57,7 @@ You can define custom extractors with regular expressions by defining inputs to 
   </thead>
   <tbody>
     <tr>
-      <td><pre>uses: jasonmacgowan/parse-issue@v1
+      <td><pre>uses: actionsdesk/parse-issue@v1
 inputs:
   extract_username: '&lt;p id="username">(?&lt;username>[^&lt;]+)&lt;/p>'
   extract_email: '&lt;p id="email">johnsmith@example.com&lt;/p>'</pre></td>
@@ -68,7 +68,7 @@ inputs:
 email: johnsmith@example.com</pre></td>
     </tr>
     <tr>
-      <td><pre>uses: jasonmacgowan/parse-issue@v1
+      <td><pre>uses: actionsdesk/parse-issue@v1
 inputs:
   extract_awesome: '^(.+) is awesome!$'</pre></td>
       <td><pre># Example Issue
