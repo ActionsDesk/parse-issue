@@ -1,3 +1,5 @@
+**Note:** This repository is no longer maintained. See [`issue-ops/parser`](https://github.com/issue-ops/parser) for a suitable alternative.
+
 # Actions Issue Parser
 
 Extract useful information from new issues for use in your GitHub Actions.
